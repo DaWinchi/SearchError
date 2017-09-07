@@ -8,6 +8,7 @@
 #include "afxdialogex.h"
 #include "WinError.h"
 #include <iostream>
+#include <stdio.h>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -20,7 +21,7 @@
 
 CSearchErrorDlg::CSearchErrorDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(CSearchErrorDlg::IDD, pParent)
-	, error_id(0)
+	, error_id(_T("5"))
 	, text_error(_T(""))
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
@@ -98,28 +99,30 @@ HCURSOR CSearchErrorDlg::OnQueryDragIcon()
 void CSearchErrorDlg::OnBnClickedClose()
 {
 	// TODO: добавьте свой код обработчика уведомлений
-	
+	CDialog::OnCancel();
+
 }
 
 
 void CSearchErrorDlg::OnBnClickedSearch()
 {
 	// TODO: добавьте свой код обработчика уведомлений
-	
+
 	UpdateData();
 	LPTSTR text;
 
-	double id = 0;
-	id = std::sscanf("%d%o%x", error_id);
-	
+	int id=0;
+	swscanf_s((error_id.GetBuffer()), _T("%i"), &id);
 
 
-	::FormatMessage(FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_ALLOCATE_BUFFER, NULL, id, 0, (LPTSTR) &text, 0, NULL);
+
+
+	::FormatMessage(FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_ALLOCATE_BUFFER, NULL, id, 0, (LPTSTR)&text, 0, NULL);
 
 	text_error.Format(_T("%s"), text);
 
 	UpdateData(FALSE);
-	
+
 	::LocalFree(text);
 
 

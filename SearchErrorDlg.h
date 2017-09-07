@@ -31,6 +31,6 @@ protected:
 public:
 	afx_msg void OnBnClickedClose();
 	afx_msg void OnBnClickedSearch();
-	DWORD error_id;
+	CString error_id;
 	CString text_error;
 };
