@@ -1,0 +1,22 @@
+﻿Сборка начата 07.09.2017 15:07:34.
+     1>Проект "C:\Users\534.PD\Documents\Prutskov\SearchError\SearchError.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SearchError.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SearchErrorDlg.cpp
+         SearchErrorDlg.cpp
+     1>c:\users\534.pd\documents\prutskov\searcherror\searcherrordlg.cpp(4): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+                 аргументы командной строки:  см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+     1>c:\users\534.pd\documents\prutskov\searcherror\searcherrordlg.cpp(4): warning C4603: _CRT_SECURE_NO_WARNINGS: макрос не определен или определение изменилось после использования предкомпилированного заголовка
+                 Добавление макроопределения в предкомпилированный заголовок вместо определения его здесь
+                 c:\users\534.pd\documents\prutskov\searcherror\searcherrordlg.cpp(5): использование предкомпилированного заголовка
+     1>c:\users\534.pd\documents\prutskov\searcherror\searcherrordlg.cpp(117): warning C4244: аргумент: преобразование "double" в "DWORD", возможна потеря данных
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\534.PD\Documents\Prutskov\SearchError\Debug\SearchError.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\534.PD\Documents\Prutskov\SearchError\Debug\SearchError.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\534.PD\Documents\Prutskov\SearchError\Debug\SearchError.lib" /MACHINE:X86 Debug\SearchError.res
+         Debug\SearchError.obj
+         Debug\SearchErrorDlg.obj
+         Debug\stdafx.obj
+         SearchError.vcxproj -> C:\Users\534.PD\Documents\Prutskov\SearchError\Debug\SearchError.exe
+     1>Сборка проекта "C:\Users\534.PD\Documents\Prutskov\SearchError\SearchError.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:00.62
